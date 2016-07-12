@@ -12,6 +12,8 @@ env/
 build/
 develop-eggs/
 dist/
+solid-winners.sublime-workspace/
+prepros.cfg/
 downloads/
 eggs/
 .eggs/
