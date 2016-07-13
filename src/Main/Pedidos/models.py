@@ -6,7 +6,3 @@ class Pedido(models.Model):
 
     def __str__(self):
         return self.Estado
-
-class ClassName(object):
-    """docstring for """
-    def __str__(self):

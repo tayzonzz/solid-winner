@@ -11,7 +11,7 @@ class Integrantes(models.Model):
 
 class Equipos(models.Model):
     Nombre = models.CharField(blank=False, max_length=120)
-    Integrador = models.ManyToManyField(Integrantes, trough='Membresia')
+    Integrador = models.ManyToManyField(Integrantes, through='Membresia')
 
     def __str__(self):
         return self.Nombre

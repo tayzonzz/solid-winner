@@ -11,10 +11,10 @@ class Contactos(models.Model):
         return self.Nombre
 
 
-class Categoria():
+class Categoria(models.Model):
     Codigo = models.CharField(max_length=20)
     Nombre = models.CharField(max_length=120)
-    Pertenecientes = models.ManyToManyField(Contactos, trough='Categoria')
+    Pertenecientes = models.ManyToManyField(Contactos, through='Directorio')
 
     def __str__(self):
         return self.Nombre

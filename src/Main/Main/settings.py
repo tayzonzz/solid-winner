@@ -37,6 +37,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Directorio',
+    'Equipos',
+    'Pedidos',
+    'Rating',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -76,8 +80,12 @@ WSGI_APPLICATION = 'Main.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'd4eajb11v5s0hp',
+            'USER': 'oxsdamfjpfyivl',
+            'PASSWORD': 'xtmhtwxmYa_MjOpdc-g1mxWhuT',
+            'HOST': 'ec2-54-243-249-176.compute-1.amazonaws.com',
+            'PORT': 5432,
     }
 }
 
